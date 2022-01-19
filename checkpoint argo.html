@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+
+let text="hello my name is dante";
+let result = text.length;
+document.getElementById("demo").innerHTML = "length of sentence is "+result;
+
+function WordCount(text) { 
+  return text.split(" ").length;
+}
+document.getElementById("demo1").innerHTML = "number of words "+WordCount(text);
+
+function Vowels(text) {
+  var vowelsCount = 0;
+  var string = text.toString();
+  for (var i = 0; i <= string.length - 1; i++) {
+    if (string.charAt(i) == "a" || string.charAt(i) == "e" || string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u" || string.charAt(i) == "y") {
+      vowelsCount += 1;
+    }
+  }
+  return vowelsCount;
+}
+document.getElementById("demo2").innerHTML = "number of Vowels "+Vowels(text);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JS string</h1>
+<h2>checkpoint algo</h2>
+
+<p>The length property returns the length of a string.</p>
+
+<p>Find the length and the number of words of "hello, my name is dante.":</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "hello, my name is dante.";
+let length = text.length;
+let result =  text.endsWith(".");
+
+document.getElementById("demo").innerHTML = length;
+
+function WordCount(str) { 
+  return str.split(" ").length;
+}
+
+console.log(WordCount("hello, my name is dante."));
+
+</script>
+
+</body>
+</html>
